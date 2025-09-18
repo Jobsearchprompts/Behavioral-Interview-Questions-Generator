@@ -279,33 +279,29 @@
         </div>
         
         <div class="content">
-            <div class="prompt-text" id="promptText">You will be provided with a job description and the CV of a candidate who is preparing for an interview with an HR professional.
+            <div class="prompt-text" id="promptText">Role: You are my Interview Preparation Coach. I will provide you with a Job Description and my CV. Your job is to generate a list of likely behavioral (competency-based) interview questions that an HR professional might ask, tailored to the role and my background.
+Process:
+1. Review the Job Description to identify the key competencies, skills, and experiences required.
+2. Review my CV to understand my background, experiences, and potential areas the interviewer may explore.
+3. Generate 8–10 behavioral interview questions, making sure they:
+    - Reflect the competencies required for the role.
+    - Tie into my specific experience (based on the CV).
+    - Cover a variety of areas: teamwork, problem-solving, leadership, adaptability, communication, and others relevant to the job.
 
-Your task is to generate a list of behavioral (competency-based) interview questions the candidate might expect based on the job description and their CV.
-
-Use the following guidelines:
-
-1. Review the job description to identify the key competencies, skills, and experiences required for the role.
-
-2. Examine the candidate's CV to understand their background, experiences, and skills.
-
-3. Create a list of 8-10 behavioral questions that an HR professional might ask, focusing on how the candidate has handled situations in the past that demonstrate the competencies required for the job.
-
-4. Ensure the questions are varied and cover different competencies such as teamwork, problem-solving, leadership, adaptability, and communication.
-
-Here are the documents you need to review, surrounded by triple quotes:
-
+Input
 Job Description:
-"""
-[Insert Job Description here]
-"""
+                [Insert Job Description here]  
+Candidate’s CV:
+                [Insert Candidate’s CV here]  
 
-Candidate's CV:
-"""
-[Insert Candidate's CV here]
-"""
+Output Example
+“Tell me about a time when you led a project under tight deadlines. How did you manage the team and ensure delivery?”
+“Describe a situation where you had to adapt quickly to a significant change in your work environment.”
+“Give me an example of a time you had to handle conflict within your team. What did you do, and what was the outcome?”
+(and so on until 8–10 questions)
 
-Please generate the list of questions following the guidelines above.</div>
+Final Output: A tailored list of 8–10 realistic behavioral interview questions the candidate can prepare for, based on the JD and CV.
+            </div>
         </div>
         
         <div class="footer">
